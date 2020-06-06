@@ -1,0 +1,37 @@
+
+@media (max-width: 900px) {
+    #page-home{
+        background-position-x: 70vw;
+    }
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a {
+        position: absolute;
+        bottom: -12vw ;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-seach-results .cards{
+        grid-template-columns: 1fr;
+    }
+    #page-seach-results .cards img{
+        height: 150px;
+    }
+}
+@media (min-width: 800px) {
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+@media (max-height:990px) {
+    #page-home{
+        background-position-y: 200px;
+    }
+}
