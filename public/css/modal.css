@@ -1,5 +1,5 @@
 #modal {
-background-color: var(--primary-color);
+background-color: rgb(95, 187, 179);
 
 height: 100vh;
 width: 100vw;
@@ -19,8 +19,8 @@ transform: 400ms;
 }
 
 #modal .content {
-color: whitesmoke;
-width: 420px;
+color: rgb(25, 84, 107);
+width: 500px;
 }
 
 #modal .header {
@@ -42,17 +42,17 @@ font-size: 0.01px;
 } 
 
 #modal .header h1{
-color: thistle;
+color: rgb(19, 117, 71);
 font-size: 36px;
 line-height: 42px;
 }
 
 #modal form label{
-    font-size: 14px;
+    font-size: 19px;
     line-height: 16px;
 
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 #modal form .field{

@@ -73,13 +73,13 @@
 
     margin-top: 30px;
 
-    background-color: #28e2e2f1;
+    background-color: #38bbbbf1;
     transition: 400ms;
     
 }
 
 #page-home main a:hover {
-    background: rgb(36, 160, 160);
+    background: rgb(54, 144, 180);
 }
 #page-home main a span{
     width: 60px;
@@ -88,7 +88,7 @@
     border-radius: 8px;
     border-bottom-left-radius: 8px;
 
-    background: rgb(115, 244, 248);
+    background: rgb(83, 140, 155);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -30,7 +30,7 @@
 }
 
 form {
-    background-color: rgb(202, 255, 252);
+    background-color: rgb(107, 183, 185);
 
     margin: 80px auto;
     /*preenchimento:*/
@@ -50,9 +50,19 @@ form fieldset{
 }
 form legend {
     margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
 }
 form legend h2  {
-    font-size: 24px; 
+    font-size: 27px; 
+}
+form legend span{
+    font-size: 13px;
+    color: var(--title-color);
 }
 form .field {
     flex: 1;
@@ -66,7 +76,7 @@ form .field-group {
 }
 form input,
 form select {
-    background-color: #f0f0f5;
+    background-color: #d5e9e4;
 
     border: 0;
     padding: 16px 24px;
@@ -98,10 +108,10 @@ form button {
     width: 260px;
     height: 56px;
 
-    background-color: var(--title-color);
+    background-color: rgb(53, 148, 89);
     border-radius: 8px;
 
-    color: rgb(173, 250, 220);
+    color: rgb(30, 104, 75);
     font-weight: bold;
     font-size: 16px;
 
@@ -111,7 +121,7 @@ form button {
     transition: background-color 400ms;
 }
 form button:hover {
-    background-color: rgb(28, 143, 151);
+    background-color: rgb(27, 172, 75);
 
 }
 .itens-grid{
@@ -121,10 +131,10 @@ form button:hover {
 
 }
 .itens-grid li {
-    background-color: rgb(176, 236, 236);
+    background-color: rgb(168, 235, 255);
     list-style: none;
 
-    border: 2px solid rgb(147, 193, 241) ;
+    border: 2px solid rgb(84, 135, 190) ;
     border-radius: 8px ;
     height: 180px;
 
@@ -148,11 +158,11 @@ form button:hover {
     display: flex;
     align-items: center;
 
-    color: rgb(105, 32, 173);
+    color: rgb(75, 40, 107);
 }
 .itens-grid li.selected {
-    background: #76f7ae;
-    border: 2px solid rgb(80, 240, 165);
+    background: #37e482;
+    border: 2px solid rgb(27, 160, 98);
 }
 
 .itens-grid li img,
