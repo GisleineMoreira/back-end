@@ -124,13 +124,13 @@ form button:hover {
     background-color: rgb(27, 172, 75);
 
 }
-.itens-grid{
+.items-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px
 
 }
-.itens-grid li {
+.items-grid li {
     background-color: rgb(168, 235, 255);
     list-style: none;
 
@@ -151,7 +151,7 @@ form button:hover {
     cursor: pointer;
 }
 
-.itens-grid li span{
+.items-grid li span{
     margin-top: 12px;
     flex:1;
 
@@ -160,12 +160,12 @@ form button:hover {
 
     color: rgb(75, 40, 107);
 }
-.itens-grid li.selected {
+.items-grid li.selected {
     background: #37e482;
     border: 2px solid rgb(27, 160, 98);
 }
 
-.itens-grid li img,
-.itens-grid li span {
+.items-grid li img,
+.items-grid li span {
     pointer-events: none;
 }

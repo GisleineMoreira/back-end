@@ -53,54 +53,56 @@ document
      .querySelector("select[name=uf]")
      .addEventListener("change", getCities)
 
+
 //itens de coleta:
 //pegar todos os li´s
 
-const itensToCollect = document.querySelectorAll(".itens-grid li")
+const itemsToCollect = document.querySelectorAll(".items-grid li")
 
-for(const iten of itensToCollect ){
-    iten.addEventListener("click", handleSelectedIten)
+for(const item of itemsToCollect ) {
+    item.addEventListener("click", handleSelectedItem)
 }
 
-const collectedItens = document.querySelector("input[name=itens]")
-let selectedItens =[]
+const collectedItems = document.querySelector("input[name=items]")
 
-function handleSelectedIten(event){
-    const itenLi = event.target
+let selectedItems =[]
+
+function handleSelectedItem(event){
+    const itemLi = event.target
     //adcionar ou remover uma classe com javascript
-    itenLi.classList.toggle("selected")
+    itemLi.classList.toggle("selected")
 
 
-    const itenId = itenLi.dataset.id
-    
-
+    const itemId = itemLi.dataset.id
+    console.log(`ITEM ID: `, itemId)
     //verificar se existem itens selecionados, se sim
     //pegar os itens selecionados
 
-    const alreadySelected = selectedItens.findIndex( iten =>{
-        const itenFound = iten == itenId //isso será true ou false
-        return itenFound 
+    const alreadySelected = selectedItems.findIndex( item =>{
+        const itemFound = item == itemId //isso será true ou false
+        return itemFound 
     })
 
     //se já estiver selecionado, 
 
     if( alreadySelected >= 0 ) {
         //tirar da seleção
-        const filteredItens = selectedItens.filter(iten => {
-          const itensIsDiferent = iten != itenId //false
-            return itensIsDiferent
+        const filteredItems = selectedItems.filter(item => {
+          const itemsIsDiferent = item != itemId //false
+            return itemsIsDiferent
         })
 
-         selectedItens = filteredItens
+         selectedItems = filteredItems
 
     } else {
         //se não estiver selecionado
         //adcionar a seleçao
-        selectedItens.push(itenId)
+        selectedItems.push(itemId)
     }    
 
     //se não estiver selecionado, adcionar  à seleção
     // atualizar o campo escondido com os itens 
     
-    collectedItens.value = selectedItens
+    collectedItems.value = selectedItems
+   console.log(`selectedItems: `, selectedItems)
 }
